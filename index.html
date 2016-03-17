@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>ALOFT</title>
+  <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+    
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+</head>
+<body class="code-snippets-visible">
+  <div class="container">
+    <section class="header">
+      <h1 class="title">ALOFT<br>&nbsp;</h1>
+      <a class="button button-primary" href="map.html">Launch Visualization</a>
+      <div class="row" style="text-align:left; margin-top:15vh">
+        <div class="twelve columns">
+            <h2>Motivation</h2><p>
+          A lot of flights get canceled due to bad weather. At these times airlines prioritize flights to certain locations over other and will try to not cancel these flights. This visualization shows you the priority that destinations get from various airports. We hope this will help you choose a fligthpath that is more likely to get you to your destination during bad weather.</p>
+        </div>
+          <div class="twelve columns">
+            <h2>Implementation</h2>
+              
+              <h4>Data Mining and processing</h4>
+              <p>We sourced flight departure record from the <a href="http://www.transtats.bts.gov/DL_SelectFields.asp?Table_ID=236&DB_Short_Name=On-Time">Bureau of Transportation</a> (part of the US Department of Transportation). We then used <a href="http://www.wunderground.com/history/">Weather Underground</a> to identify days with bad weather. Once we knew which airports had bad weather on which days, we checked flight departure cancellations and delays for those situatons. This helped us figure out the destinations that have higher priority at different airports.</p>
+              
+              <h4>Visualization</h4>
+              <p>We used D3js to implement our visualizations. Each airport can be seen in one of three views. We had to be creative about how we showed our data as a traditional map simply did not convey this information nicely.</p>
+        </div>
+      </div>
+    </section>
+
+  </div>
+    
+</body>
+</html>

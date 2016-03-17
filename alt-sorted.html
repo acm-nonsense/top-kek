@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aloft</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+</head>
+<body>
+  <div class="container">
+    <a href = "index.html" id="backHome" ><p>&larr; Back to home</p></a>
+    <h1 id="title"></h1>
+    <row>
+          <div class = "six columns"><h4 id=details></h4></div>
+          <div class = "six columns" style="text-align: right;"><h5><a href="sorted.html" id="map" style="text-decoration: none;">Map View </a> | <a href="sorted.html" id="sort" style="text-decoration: none;">Sorted View </a></h5></div>
+      </row>
+    <div id="chart" width="960" height="400" style="background=#333;"></div>
+    <h2 id="about" style="margin-top:77vh;">About this vis</h2>
+    <h5 style="margin-bottom:1vh;">Interaction</h5>
+    <p>Click on one the bars so set the represented airport as your origin airport. The vis will then update to show information using that airport as the origin of your flight.</p>
+    <h5 style="margin-bottom:1vh;">Color</h5>
+    <p>The color of the bar represents it's Category. The bluer the color, the lower it's category, and the less likely that this flight gets canceled when it departs from that origin airport.</p>
+    <h5 style="margin-bottom:1vh;">Bar Length</h5>
+    <p>The longer the air port's bar trail, the longer is the flight from the origin aiport to that airport.</p>
+</div>
+  <script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <script src="airport_functions.js" charset="utf-8"></script>
+  <script src="alt-sorted_view.js"></script>
+      
+</body>
+</html>
